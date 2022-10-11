@@ -134,8 +134,9 @@ section {
 
 .header .logo {
   font-size: 2.5rem;
-  color: #130f40;
+  color: #e4ac4c;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .header .logo i {
@@ -146,6 +147,7 @@ section {
   margin: 0 1rem;
   font-size: 1.7rem;
   color: #666;
+  text-transform: uppercase;
 }
 
 .header .navbar a:hover {
@@ -586,6 +588,7 @@ em {
 
 .contact .image img {
   width: 100%;
+  margin-left: 20px;
 }
 
 .contact .container {
@@ -601,7 +604,7 @@ em {
 }
 
 .contact .container .btn:hover {
-  background: #130f40;
+  background: #4267B2;
 }
 
 .contact .container h3 {
@@ -627,7 +630,7 @@ em {
 
 .footer {
   position: relative;
-  background: url(../image/footer_background.jpg) no-repeat;
+  background-color: #c7980b;
   background-position: center;
   background-size: center;
   padding-top: 10rem;
@@ -674,22 +677,22 @@ em {
 .footer .credit {
   text-align: center;
   color: #fff;
-  font-size: 2rem;
-  padding: 2rem 1rem;
-  margin-top: 2.5rem;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  margin-top: 1.5rem;
 }
 
 .footer .credit span {
-  color: #e67e22;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
-  .header {
+  /* .header {
     padding: 2rem;
-  }
+  } */
   section {
     padding: 5rem 2rem;
   }
