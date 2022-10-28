@@ -29,7 +29,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #e67e22;
+  background: #dba80d;
   border-radius: 5rem;
 }
 
@@ -45,7 +45,7 @@ section {
 }
 
 .heading span {
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 .btn {
@@ -140,7 +140,7 @@ section {
 }
 
 .header .logo i {
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 .header .navbar a {
@@ -151,7 +151,7 @@ section {
 }
 
 .header .navbar a:hover {
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 .header .icons a,
@@ -164,7 +164,7 @@ section {
 
 .header .icons a:hover,
 .header .icons div:hover {
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 
@@ -271,6 +271,7 @@ em {
 
 .about .image img {
   width: 100%;
+  border-radius: 20px;
 }
 
 
@@ -287,7 +288,7 @@ em {
 }
 
 .about .content h3 span {
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 .about .content p {
@@ -339,7 +340,7 @@ em {
 
 .dog-food .content h3 span,
 .cat-food .content h3 span {
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 .dog-food .content p,
@@ -408,6 +409,7 @@ em {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+     border-radius: 8px;
 }
 
 .shop .box-container .box .icons {
@@ -433,7 +435,7 @@ em {
 
 .shop .box-container .box .icons a:hover {
   color: #fff;
-  background: #e67e22;
+  background: #e4ac4c;
 }
 
 .shop .box-container .box .content {
@@ -449,7 +451,7 @@ em {
 
 .shop .box-container .box .content .amount {
   font-size: 2rem;
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 .services .box-container {
@@ -481,7 +483,7 @@ em {
   line-height: 6.5rem;
   font-size: 3rem;
   color: #fff;
-  background: #e67e22;
+  background: #e4ac4c;
   border-radius: 50%;
   margin-bottom: .5rem;
 }
@@ -518,7 +520,7 @@ em {
 
 .plan .box-container .box .title {
   text-align: center;
-  color: #e67e22;
+  color: #e4ac4c;
   font-size: 2rem;
 }
 
@@ -529,7 +531,7 @@ em {
 }
 
 .plan .box-container .box .icon {
-  color: #e67e22;
+  color: #e4ac4c;
   font-size: 5rem;
   padding: 2rem 0;
 }
@@ -554,7 +556,7 @@ em {
 }
 
 .plan .box-container .box .list p span {
-  color: #e67e22;
+  color: #e4ac4c;
 }
 
 .plan .box-container .box .amount {
@@ -588,7 +590,9 @@ em {
 
 .contact .image img {
   width: 100%;
-  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
 }
 
 .contact .container {
@@ -630,11 +634,24 @@ em {
 
 .footer {
   position: relative;
-  background-color: #c7980b;
+  background: linear-gradient(-45deg, #e4b424, #ebcd73, #e4b424, #dba80d);
+  animation: gradient 8s ease infinite;
   background-position: center;
-  background-size: center;
+  background-size: 400% 400%;
   padding-top: 10rem;
   padding-bottom: 2rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .footer img {
@@ -700,11 +717,12 @@ em {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-position: right;
+    background-position: center;
+    align-items: flex-start;
   }
   .home .content {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-top: 5rem;
   }
   .home .content h3 {
     font-size: 4.5rem;
